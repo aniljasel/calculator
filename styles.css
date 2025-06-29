@@ -257,7 +257,8 @@ body {
     .container {
         width: 100%;
         border-radius: 0;
-        padding: 30px;
+        padding: 10px;
+        bottom: 0;
     }
 
     .header h1 {
@@ -269,7 +270,7 @@ body {
     }
 
     .buttons {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .inputs {
@@ -281,5 +282,37 @@ body {
         padding: 20px 0;
         font-size: 2rem;
     }
-    
+
+    .operation button {
+        padding: 20px 25px;
+        font-size: 1.8rem;
+    }
+
+    .numbers button {
+        font-size: 2rem;
+    }
+
+    .operation button i {
+        font-size: 1.5rem;
+    }
+
+    .history-container {
+        padding: 20px;
+    }
+
+    .history-container h2 {
+        font-size: 2rem;
+    }
+
+    .history-container ul {
+        line-height: 1.5;
+        padding-left: 20px;
+        font-size: 1.4rem;
+    }
+
+    #clear-history {
+        padding-top: 10px;
+        font-size: 2rem;
+    }
+        
 }
