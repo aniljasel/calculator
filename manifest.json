@@ -1,0 +1,22 @@
+{
+  "id": "/index.html",
+  "name": "Calculator",
+  "short_name": "Calculator",
+  "description": "A calculator with a clean UI.",
+  "start_url": "http://127.0.0.1:5501/calculator/index.html",
+  "display": "standalone",
+  "theme_color": "#ff4500",
+  "background_color": "#fff",
+  "icons": [
+      {
+          "src": "media/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "media/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+    ]
+}

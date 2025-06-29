@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --secondary: rgba(91, 62, 62, 0.852);
+    --dark: #161638;
+    --light: #ffffff;
+    --glass: rgba(0, 0, 0, 0.231);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 20px;
+    color: #fff;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 40%;
+    font-size: 1.2rem;
+    background-color: var(--secondary);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.history-container h2 {
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+.history-container ul {
+    padding-left: 14px;
+    margin: 0;
+    font-size: small;
+}
+
+#history-list {
+    max-width: 280px;
+}
+
+#clear-history {
+    padding-top: 5px;
+    font-size: medium;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-right: 5px;
+    transition: color 0.3s ease;
+}
+
+.header button:hover {
+    color: #74a276;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: right;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.inputs .result {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.3rem;
+    justify-content: right;
+    border: none;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+}
+
+.inputs input:focus,
+.inputs .result:focus {
+    outline: none;
+    background: transparent;
+}
+
+.inputs input::placeholder,
+.inputs .result::placeholder {
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.buttons .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex: 1;
+}
+
+.buttons .operation {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    flex: 0 0 60px;
+}
+
+.operation button,
+.numbers button {
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--glass);
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.numbers button {
+    font-size: 1.3rem;
+}
+
+.operation button {
+    font-size: 1.5rem;
+}
+
+.operation button:hover,
+.numbers button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+.operation button:active,
+.numbers button:active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.operation button i,
+.numbers button i {
+    font-size: 1.1rem;
+}
+
+.numbers button#equals {
+    background-color: #74a276;
+}
+
+.numbers button#equals:hover {
+    background-color: #45a049;
+}
+
+.numbers button#equals:active {
+    background-color: #3e8e41;
+}
+
+.operation button#Delete {
+    background-color: #db5a51;
+}
+
+.operation button#Delete:hover {
+    background-color: #e53935;
+}
+
+.operation button#Delete:active {
+    background-color: #d32f2f;
+}
+
+.numbers button#clear {
+    background-color: #c29859;
+}
+
+.numbers button#clear:hover {
+    background-color: #fb8c00;
+}
+
+.numbers button#clear:active {
+    background-color: #f57c00;
+}
+
+.numbers button#percent {
+    background-color: #4d7da3;
+}
+
+.numbers button#percent:hover {
+    background-color: #1e88e5;
+}
+
+.numbers button#percent:active {
+    background-color: #1976d2;
+}
+
+.numbers button#sqrt {
+    background-color: #803c8b;
+}
+
+.numbers button#sqrt:hover {
+    background-color: #8e24aa;
+}
+
+.numbers button#sqrt:active {
+    background-color: #7b1f8c;
+}

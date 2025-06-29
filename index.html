@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./media/icon-512x512.png" type="image/x-icon">
+    <title>Calculator</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section class="calculator">
+        <div class="container">
+            <div class="header">
+            <h1>Calculator</h1>
+            <button id="history-btn"><i class="fas fa-history"></i></button>
+                <div class="history-container" id="history" style="display: none;">
+                    <h2>History</h2>
+                    <ul id="history-list">
+                        <!-- History items will be added here -->
+                    </ul>
+                    <button id="clear-history">Clear History</button>
+                </div>
+            </div>
+            <div class="inputs" id="inputs">
+                <input type="text" id="input" placeholder="0">
+                <div class="result" id="result">
+                    <!-- Result will be displayed here -->
+                </div>
+            </div>
+            <div class="buttons" id="buttons">
+                <div class="numbers" id="numbers">
+                    <button id="percent"><i class="fas fa-percent"></i></button>
+                    <button id="sqrt"><i class="fas fa-square-root-alt"></i></button>
+                    <button id="clear">C</button>
+                    <button id="1">1</button>
+                    <button id="2">2</button>
+                    <button id="3">3</button>
+                    <button id="4">4</button>
+                    <button id="5">5</button>
+                    <button id="6">6</button>
+                    <button id="7">7</button>
+                    <button id="8">8</button>
+                    <button id="9">9</button>
+                    <button id="decimal">.</button>
+                    <button id="0">0</button>
+                    <button id="equals"><i class="fas fa-equals"></i></button>
+                </div>
+                <div class="operation" id="operation">
+                    <button id="Delete"><i class="fas fa-backspace"></i></button>
+                    <button id="add"><i class="fas fa-plus"></i></button>
+                    <button id="subtract"><i class="fas fa-minus"></i></button>
+                    <button id="multiply"><i class="fas fa-times"></i></button>
+                    <button id="divide"><i class="fas fa-divide"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="./manifest.json"></script>
+
+</body>
+</html>
