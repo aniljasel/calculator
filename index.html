@@ -60,6 +60,12 @@
 
     <script src="./script.js"></script>
     <script src="./manifest.json"></script>
+    <script>
+        if (window.jQuery) {
+            delete window.jQuery;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </body>
 </html>
