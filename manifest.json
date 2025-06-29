@@ -3,7 +3,7 @@
   "name": "Calculator",
   "short_name": "Calculator",
   "description": "A calculator with a clean UI.",
-  "start_url": "http://127.0.0.1:5501/calculator/index.html",
+  "start_url": "https://aniljasel.github.io/calculator/index.html",
   "display": "standalone",
   "theme_color": "#ff4500",
   "background_color": "#fff",
