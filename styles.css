@@ -249,3 +249,37 @@ body {
 .numbers button#sqrt:active {
     background-color: #7b1f8c;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0px;
+    }
+    .container {
+        width: 100%;
+        border-radius: 0;
+        padding: 30px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header button {
+        font-size: 1.8rem;
+    }
+
+    .buttons {
+        margin-top: 40px;
+    }
+
+    .inputs {
+        margin-top: 100px;
+    }
+
+    .inputs input,
+    .inputs .result {
+        padding: 20px 0;
+        font-size: 2rem;
+    }
+    
+}
