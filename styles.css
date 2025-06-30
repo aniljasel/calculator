@@ -267,12 +267,12 @@ body {
     }
 
     .header button {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .buttons {
         margin-top: 50px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .inputs {
